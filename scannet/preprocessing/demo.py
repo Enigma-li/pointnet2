@@ -10,11 +10,10 @@ import numpy as np
 import pc_util
 
 data = np.load('scannet_scenes/scene0001_01.npy')
-scene_points = data[:,0:3]
-colors = data[:,3:6]
-instance_labels = data[:,6]
-semantic_labels = data[:,7]
-
+scene_points = data[:, 0:3]
+colors = data[:, 3:6]
+instance_labels = data[:, 6]
+semantic_labels = data[:, 7]
 
 output_folder = 'demo_output'
 if not os.path.exists(output_folder):
